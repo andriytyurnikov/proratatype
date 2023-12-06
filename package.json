@@ -40,6 +40,7 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.1.1",
+		"bits-ui": "^0.10.3",
 		"clsx": "^2.0.0",
 		"lucide-svelte": "^0.294.0",
 		"mode-watcher": "^0.1.2",
