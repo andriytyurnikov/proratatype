@@ -22,7 +22,7 @@ const config = {
 				'script-src': ['self', 'https://va.vercel-scripts.com']
 			},
 			reportOnly: {
-				'script-src': ['self', 'https://vitals.vercel-insights.com']
+				'report-uri': ['self', 'https://vitals.vercel-insights.com']
 			}
 		}
 	}
