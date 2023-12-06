@@ -19,10 +19,10 @@ const config = {
 		
 		csp: {
 			directives: {
-				'script-src': ['self', 'vitals.vercel-insights.com']
+				'script-src': ['self', 'https://va.vercel-scripts.com']
 			},
 			reportOnly: {
-				'script-src': ['self', 'vitals.vercel-insights.com']
+				'script-src': ['self', 'https://vitals.vercel-insights.com']
 			}
 		}
 	}
