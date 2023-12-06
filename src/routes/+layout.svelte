@@ -17,6 +17,7 @@
   import { webVitals } from '$lib/vitals';
   let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
+  import { page } from '$app/stores';
   $: if (browser && analyticsId) {
     webVitals({
       path: $page.url.pathname,
