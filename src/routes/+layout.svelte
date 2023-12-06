@@ -10,10 +10,20 @@
   import { Github, Youtube, Tractor, Sun, Moon } from "lucide-svelte";
   import { ModeWatcher, toggleMode } from "mode-watcher";
 
-  import { dev } from '$app/environment';
+  import { browser, dev } from '$app/environment';
   import { inject } from '@vercel/analytics';
 
   inject({ mode: dev ? 'development' : 'production' });
+  import { webVitals } from '$lib/vitals';
+  let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
+
+  $: if (browser && analyticsId) {
+    webVitals({
+      path: $page.url.pathname,
+      params: $page.params,
+      analyticsId
+    })
+  }
 </script>
 
 <ModeWatcher />
