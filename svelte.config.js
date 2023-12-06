@@ -19,7 +19,7 @@ const config = {
 		
 		csp: {
 			directives: {
-				'connect-src': ['self', 'https://*.vercel-insights.com']
+				'connect-src': ['self', 'https://*.vercel-insights.com', 'https://*.vercel-analytics.com']
 			}
 		}
 	}
